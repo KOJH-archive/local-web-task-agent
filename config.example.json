@@ -1,0 +1,11 @@
+{
+  "ollama_url": "http://127.0.0.1:11434",
+  "read_only_default": true,
+  "allowed_domains": [],
+  "max_steps": 20,
+  "max_seconds": 600,
+  "max_same_action": 3,
+  "approval_timeout_seconds": 900,
+  "request_timeout_seconds": 45
+}
+

@@ -1,0 +1,5 @@
+streamlit>=1.57,<2
+requests>=2.32,<3
+feedparser>=6.0,<7
+pytest>=8,<10
+ty>=0.0.1

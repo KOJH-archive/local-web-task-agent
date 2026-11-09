@@ -1,0 +1,22 @@
+[project]
+name = "web-task-agent"
+version = "0.1.0"
+description = "Local-first, approval-gated web task agent using Ollama and ego-browser"
+requires-python = ">=3.11"
+dependencies = [
+  "feedparser>=6.0,<7",
+  "requests>=2.32,<3",
+  "streamlit>=1.57,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ty>=0.0.1"]
+
+[project.scripts]
+web-task-agent = "web_agent.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--basetemp=.pytest_tmp"
+
